@@ -7,6 +7,10 @@
 
 **Code will be uploaded before CVPR 2023 (mid-June). Please stay tuned!**
 
+---
+
+**CVPR 2023 Materials: [\[Presentation Video\]](https://youtu.be/hBSeN222Um4)** **<a href="https://jyunlee.github.io/projects/implicit-two-hands/data/cvpr2023_poster.pdf" class="image fit" type="application/pdf">\[Poster\]</a>**
+
 <p align="center">
   <img src="teaser.gif" alt="animated" />
 </p>
