@@ -34,9 +34,9 @@ Clone this repository and install the dependencies specified in `requirements.tx
 
 ## Data Preparation 
 
-1. Download InterHand2.6M dataset from [its official website](https://mks0601.github.io/InterHand2.6M/). Set the value of `path` variable in your config file -- which is `configs/init_occ/init_occ.yaml`, `configs/ref_occ/ref_occ.yaml` or `configs/kpts_ref/kpts_ref.yaml` depending on your network -- as  `annotation` directory path of InterHand2.6M.
-2. Follow the data pre-processing steps of [IntagHand](https://github.com/Dw1010/IntagHand) (`dataset/interhand.py`). Set the value of `img_path` variable in your config file as the resulting pre-processed data directory path.
-3. Place your hand keypoint files -- either the ground truth keypoints of InterHand2.6M or predicted keypoints extracted using e.g. [IntagHand](https://github.com/Dw1010/IntagHand) -- under `pred_joints` sub-directory under your pre-processed data directory.
+1. Download InterHand2.6M dataset from [its official website](https://mks0601.github.io/InterHand2.6M/). Set the value of `path` variable in your config file - which is either `configs/init_occ/init_occ.yaml`, `configs/ref_occ/ref_occ.yaml` or `configs/kpts_ref/kpts_ref.yaml` depending on your network - as the path of `annotation` directory of InterHand2.6M.
+2. Follow the data pre-processing steps of [IntagHand](https://github.com/Dw1010/IntagHand) (`dataset/interhand.py`). Set the value of `img_path` variable in your config file as the path of the resulting pre-processed data directory.
+3. Place your hand keypoint files - either the ground truth keypoints of InterHand2.6M or predicted keypoints extracted using e.g. [IntagHand](https://github.com/Dw1010/IntagHand) - under `pred_joints` sub-directory under your pre-processed data directory.
 
 &nbsp;
 
