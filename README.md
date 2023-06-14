@@ -5,7 +5,7 @@
 
 **[\[Project Page\]](https://jyunlee.github.io/projects/implicit-two-hands) [\[Paper\]](https://arxiv.org/abs/2302.14348) [\[Supplementary Video\]](https://youtu.be/3yNGSRz564A)**
 
-**Code will be uploaded before CVPR 2023 (mid-June). Please stay tuned!**
+**Rest of the code will be uploaded before CVPR 2023 (mid-June). Please stay tuned!**
 
 ---
 
