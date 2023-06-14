@@ -1,0 +1,70 @@
+method: nasa
+data:
+  dataset: ref_occ_hands
+  path: /data/hand_data/InterHand/annotations 
+  img_path: /data/hand_data/interhand2.6m
+  input_type: trans_matrix
+  train_split: train
+  val_split: val
+  test_split: test
+  subfolder: true
+  model_file: .off
+  points_subsample: 2048
+  mesh_verts_subsample: 2000
+model:
+  type: ref_occ
+  encoder_latent: null
+  decoder: piece_deform_pifu
+  decoder_c_dim: 16
+  decoder_kwargs:
+    num_bones: 16
+    projection: x
+    global_projection: o
+    global_pose_projection_size: 8
+    bone_latent_size: 16
+    dims : [64, 64, 64, 64]
+    dropout : []
+    dropout_prob : 0.2
+    norm_layers : []
+    latent_in : []
+    smooth_max: false
+    use_sigmoid : true
+    latent_dropout : false
+    weight_norm : false 
+  encoder: null
+  c_dim: 256
+  z_dim: 0
+  skinning_weight: 0.0
+  use_bone_length: true
+  use_e2e: false
+  use_pifu: false
+  refine: True
+training:
+  out_dir: ./out/ref_occ
+  batch_size: 2 
+  print_every: 10
+  checkpoint_every: 2000 
+  validate_every: 2000 
+  backup_every: 1000
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  visualize_every: 50
+test:
+  threshold: 0.45
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+generation:
+  batch_size: 2048
+  vis_n_outputs: 10
+  generate_mesh: true
+  generate_pointcloud: false
+  refine: false
+  refinement_step: 0
+  n_x: 128
+  n_z: 1
+  resolution_0: 32
+  upsampling_steps: 3 
+  copy_groundtruth: true
+  vert_labels: false
+  convert_to_canonical: true

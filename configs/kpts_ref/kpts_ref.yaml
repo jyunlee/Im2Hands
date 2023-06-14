@@ -1,0 +1,80 @@
+method: nasa
+data:
+  dataset: kpts_ref_hands
+  path: /data/hand_data/InterHand/annotations #./data/Youtube-3D-Hands #/home/korrawe/nasa/data/youtube_hand/youtube_keypoint_fixed_normalized
+  img_path: /data/hand_data/interhand2.6m
+  input_type: trans_matrix
+  train_split: train
+  val_split: val
+  test_split: test
+  subfolder: true
+  model_file: .off
+  points_subsample: 4096
+  mesh_verts_subsample: 2000
+  gaussian_noise: false
+  use_unscaled_data: false
+  mano_joints: false
+model:
+  type: kpts_ref
+  refine: false
+  encoder_latent: null
+  decoder: piece_deform_pifu
+  decoder_c_dim: 16
+  decoder_kwargs:
+    num_bones: 16
+    projection: x
+    global_projection: o
+    global_pose_projection_size: 8
+    bone_latent_size: 16
+    dims : [64, 64, 64, 64]
+    dropout : []
+    dropout_prob : 0.2
+    norm_layers : []
+    latent_in : []
+    smooth_max: false
+    use_sigmoid : true
+    latent_dropout : false
+    weight_norm : false # true
+  encoder: null
+  c_dim: 256
+  z_dim: 0
+  skinning_weight: 0.0  # 2.0  #   0.5
+  use_bone_length: true
+  use_e2e: false
+  use_pifu: false
+  joint_att: True
+  fixed_image_encoder: false
+  model_arch: 'inv_gcn_selfattn_cross_attn_x4_hand_ver4' #'jihyun_gcn_hand_x2' #'default' #'default' #'gcn_selfattn_cross_attn'
+training:
+  out_dir: ./out/kpts_ref
+  batch_size: 32
+  print_every: 10
+  checkpoint_every: 200
+  validate_every: 200
+  validate_every: 1000
+  model_selection_metric: joint_err
+  model_selection_mode: minimize
+  visualize_every: 50
+  initialize_from: /data/jihyun/output/joint_att_interhand/model_best.pt
+  loss: 'mseloss'
+  offset_prediction: true
+  scale: true
+test:
+  threshold: 0.5
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+generation:
+  batch_size: 100000
+  vis_n_outputs: 10
+  generate_mesh: true
+  generate_pointcloud: false
+  refine: false
+  refinement_step: 0
+  n_x: 128
+  n_z: 1
+  resolution_0: 32 # 64
+  upsampling_steps: 3 # 3
+  copy_groundtruth: true
+  vert_labels: false # true
+  convert_to_canonical: true #false

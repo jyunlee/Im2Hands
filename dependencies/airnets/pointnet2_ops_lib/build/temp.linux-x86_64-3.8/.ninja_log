@@ -1,0 +1,10 @@
+# ninja log v5
+1	28480	1686228972034271403	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/group_points.o	553a8d43c1b68846
+1	28497	1686228972054271471	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/ball_query.o	9a7b0c0fd1921d32
+0	28999	1686228972550273173	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/interpolate.o	d371931d4cb60ea7
+0	29079	1686228972634273461	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/sampling.o	ec7b53009b3c2bb1
+1	32301	1686228975850284501	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/bindings.o	cfd38899b6997691
+7	68516	1686229012038409386	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/ball_query_gpu.o	8c917d473ec1c0a9
+3	69343	1686229012878412299	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/group_points_gpu.o	f09dd7d138df497d
+0	70351	1686229013882415781	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/interpolate_gpu.o	a71e515749387333
+1	74314	1686229017842429524	/workspace/Im2Hands_Check/dependencies/airnets/pointnet2_ops_lib/build/temp.linux-x86_64-3.8/pointnet2_ops/_ext-src/src/sampling_gpu.o	1d003934b2a6b932
