@@ -32,7 +32,7 @@ Also, install [im2mesh library of Occupancy Networks](https://github.com/autonom
 ## Data Preparation 
 
 1. Download InterHand2.6M dataset from [its official website](https://mks0601.github.io/InterHand2.6M/). Set the value of `path` variable in your config file - which is either `configs/init_occ/init_occ.yaml`, `configs/ref_occ/ref_occ.yaml` or `configs/kpts_ref/kpts_ref.yaml` depending on the network - as the path of `annotation` directory of InterHand2.6M.
-2. Follow the data pre-processing steps of [HALO](https://github.com/korrawe/halo) for sampling query points and the corresponding ground truth occupancy values.
+2. Follow the data pre-processing steps of [HALO](https://github.com/korrawe/halo) for sampling query points and the corresponding ground truth occupancy values. For modifying `prepare_data_from_mano_param_keypoints.py` file of HALO for InterHand2.6M dataset, you can refer to [this file](https://drive.google.com/file/d/1TKwIy-Tsu-2M7EQUutO-bWX-PwDBeOLk/view?usp=sharing).
 3. Follow the data pre-processing steps of [IntagHand](https://github.com/Dw1010/IntagHand) (`dataset/interhand.py`) to obtain normalized two-hand images. Set the value of `img_path` variable in your config file as the path of the resulting data directory.
 4. Place your hand keypoint files - either the ground truth keypoints of InterHand2.6M or predicted keypoints extracted using e.g. [IntagHand](https://github.com/Dw1010/IntagHand) - under `pred_joints` sub-directory under your pre-processed data directory.
 
