@@ -44,7 +44,9 @@ Clone this repository and install the dependencies specified in `requirements.tx
 
 ### Network Training
 
-Run `init_occ_train.py` to train your own Initial Occupancy Estimation Network.
+Place the pre-trained weights of [HALO](https://github.com/korrawe/halo) and [IntagHand](https://github.com/Dw1010/IntagHand) (`halo_baseline.pt` and `intaghand_baseline.pth`) under `out/init_occ` directory. These files can be also downloaded from [this Google Drive link](https://drive.google.com/drive/folders/1Kpoj1WW37hHvYgvhkwfmxNZVgPlyaApQ?usp=sharing).
+
+Then, Run `init_occ_train.py` to train your own Initial Occupancy Estimation Network.
 
 <pre><code> python init_occ_train.py </pre></code>
 
@@ -60,7 +62,9 @@ Run `init_occ_generate.py` to generate the initial per-hand shapes.
 
 ### Network Training
 
-Run `ref_occ_train.py` to train your own Refined Occupancy Estimation Network.
+Place the weights of Initial Occupancy Estimation Network (`init_occ.pt`) under `out/ref_occ` directory. The pre-trained weights can be also downloaded from [this Google Drive link](https://drive.google.com/drive/folders/1Kpoj1WW37hHvYgvhkwfmxNZVgPlyaApQ?usp=sharing). 
+
+Then, run `ref_occ_train.py` to train your own Refined Occupancy Estimation Network.
 
 <pre><code> python ref_occ_train.py </pre></code>
 
@@ -74,11 +78,11 @@ Run `ref_occ_generate.py` to generate the refined two-hand shapes.
 
 ## [Optional] Keypoint Refinement Network
 
-(NOTE: `kpts_ref_train.txt` and `kpts_ref_generate.py` will be uploaded soon.)
-
 ### Network Training
 
-Run `kpts_ref_train.py` to train your own Input Keypoint Refinement Network.
+Place the pre-trained weights of [IntagHand](https://github.com/Dw1010/IntagHand) (`intaghand_baseline.pth`) under `out/kpts_ref` directory. These files can be also downloaded from [this Google Drive link](https://drive.google.com/drive/folders/1Kpoj1WW37hHvYgvhkwfmxNZVgPlyaApQ?usp=sharing).
+
+Then, Run `kpts_ref_train.py` to train your own Input Keypoint Refinement Network.
 
 <pre><code> python kpts_ref_train.py </pre></code>
 
