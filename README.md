@@ -88,7 +88,7 @@ Then, Run `kpts_ref_train.py` to train your own Input Keypoint Refinement Networ
 
 ### Network Inference
 
-Run `kpts_ref_generate.py` to save the refined two-hand key points.
+Run `kpts_ref_generate.py` to save the refined two-hand keypoints.
 
 <pre><code> python kpts_ref_generate.py </pre></code>
 
