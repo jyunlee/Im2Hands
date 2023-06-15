@@ -25,6 +25,7 @@ Clone this repository and install the dependencies specified in `requirements.tx
  mv Im2Hands
  pip install -r requirements.txt </pre></code>
 
+Also, install [im2mesh library of Occupancy Networks](https://github.com/autonomousvision/occupancy_networks).
 
 &nbsp;
 
