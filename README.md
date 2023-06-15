@@ -25,7 +25,7 @@ Clone this repository and install the dependencies specified in `requirements.tx
 
 (NOTE: `requirements.txt` will be uploaded soon.)
 
-<pre><code>git clone https://github.com/jyunlee/Im2Hands.git
+<pre><code> git clone https://github.com/jyunlee/Im2Hands.git
  mv Im2Hands
  pip install -r requirements.txt </pre></code>
 
@@ -46,13 +46,13 @@ Clone this repository and install the dependencies specified in `requirements.tx
 
 Run `init_occ_train.py` to train your own Initial Occupancy Estimation Network.
 
-<pre><code>python init_occ_train.py </pre></code>
+<pre><code> python init_occ_train.py </pre></code>
 
 ### Network Inference
 
 Run `init_occ_generate.py` to generate the initial per-hand shapes.
 
-<pre><code>python init_occ_generate.py </pre></code>
+<pre><code> python init_occ_generate.py </pre></code>
 
 &nbsp;
 
@@ -62,13 +62,13 @@ Run `init_occ_generate.py` to generate the initial per-hand shapes.
 
 Run `ref_occ_train.py` to train your own Refined Occupancy Estimation Network.
 
-<pre><code>python ref_occ_train.py </pre></code>
+<pre><code> python ref_occ_train.py </pre></code>
 
 ### Network Inference
 
 Run `ref_occ_generate.py` to generate the refined two-hand shapes.
 
-<pre><code>python ref_occ_generate.py </pre></code>
+<pre><code> python ref_occ_generate.py </pre></code>
 
 &nbsp;
 
@@ -80,13 +80,13 @@ Run `ref_occ_generate.py` to generate the refined two-hand shapes.
 
 Run `kpts_ref_train.py` to train your own Input Keypoint Refinement Network.
 
-<pre><code>python kpts_ref_train.py </pre></code>
+<pre><code> python kpts_ref_train.py </pre></code>
 
 ### Network Inference
 
 Run `kpts_ref_generate.py` to save the refined two-hand key points.
 
-<pre><code>python kpts_ref_generate.py </pre></code>
+<pre><code> python kpts_ref_generate.py </pre></code>
 
 &nbsp;
 
