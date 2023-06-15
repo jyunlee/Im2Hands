@@ -107,5 +107,5 @@ If you find this work useful, please consider citing our paper.
 
 ## Acknowledgements
 
- - Our code is based on [HALO](https://github.com/korrawe/halo), [IntagHand](https://github.com/Dw1010/IntagHand) and [AIR-Nets](https://github.com/SimonGiebenhain/AIR-Nets), and our model parameters are partialy initialized from their pre-trained weights. We thank the authors of these three inspiring works.
- - We also thank the authors of [InterHand2.6M](https://mks0601.github.io/InterHand2.6M/) for the dataset.
+ - Our code is based on [HALO](https://github.com/korrawe/halo), [IntagHand](https://github.com/Dw1010/IntagHand), and [AIR-Nets](https://github.com/SimonGiebenhain/AIR-Nets), and our model parameters are partially initialized from their pre-trained weights. We thank the authors of these three inspiring works.
+ - We also thank the authors of [InterHand2.6M](https://mks0601.github.io/InterHand2.6M/) for the useful dataset.
