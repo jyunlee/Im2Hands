@@ -64,6 +64,8 @@ Then, run `ref_occ_train.py` to train your own Refined Occupancy Estimation Netw
 
 <pre><code> python ref_occ_train.py </pre></code>
 
+For quantitative evaluation, please refer to `eval_meshes.py` script of [HALO](https://github.com/korrawe/halo).
+
 ### Network Inference
 
 Run `ref_occ_generate.py` to generate the refined two-hand shapes.
@@ -89,6 +91,8 @@ Then, Run `kpts_ref_train.py` to train your own Input Keypoint Refinement Networ
 Run `kpts_ref_generate.py` to save the refined two-hand keypoints.
 
 <pre><code> python kpts_ref_generate.py </pre></code>
+
+For quantitative evaluation, please refer to `apps/eval_interhand.py` script of [IntagHand](https://github.com/Dw1010/IntagHand).
 
 &nbsp;
 
