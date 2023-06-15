@@ -1,7 +1,7 @@
 method: nasa
 data:
   dataset: kpts_ref_hands
-  path: /data/hand_data/InterHand/annotations #./data/Youtube-3D-Hands #/home/korrawe/nasa/data/youtube_hand/youtube_keypoint_fixed_normalized
+  path: /data/hand_data/InterHand/annotations
   img_path: /data/hand_data/interhand2.6m
   input_type: trans_matrix
   train_split: train
@@ -39,12 +39,6 @@ model:
   c_dim: 256
   z_dim: 0
   skinning_weight: 0.0  # 2.0  #   0.5
-  use_bone_length: true
-  use_e2e: false
-  use_pifu: false
-  joint_att: True
-  fixed_image_encoder: false
-  model_arch: 'inv_gcn_selfattn_cross_attn_x4_hand_ver4' #'jihyun_gcn_hand_x2' #'default' #'default' #'gcn_selfattn_cross_attn'
 training:
   out_dir: ./out/kpts_ref
   batch_size: 32
@@ -55,7 +49,6 @@ training:
   model_selection_metric: joint_err
   model_selection_mode: minimize
   visualize_every: 50
-  initialize_from: /data/jihyun/output/joint_att_interhand/model_best.pt
   loss: 'mseloss'
   offset_prediction: true
   scale: true

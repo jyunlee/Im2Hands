@@ -18,7 +18,7 @@ from artihand import diff_operators
 from dependencies.halo.halo_adapter.transform_utils import xyz_to_xyz1   
 
 
-def preprocess_joints(left_joints, right_joints, camera_params, root_rot_mat):
+def preprocess_joints(left_joints, right_joints, camera_params, root_rot_mat, return_mid=False):
 
     # preprocess left joints
     #left_joints = torch.bmm(xyz_to_xyz1(left_joints.double()), root_rot_mat['left'].double())[:, :, :3]
@@ -38,6 +38,9 @@ def preprocess_joints(left_joints, right_joints, camera_params, root_rot_mat):
 
     left_joints = left_joints - left_mid_joint
     right_joints = right_joints - left_mid_joint
+
+    if return_mid:
+        return left_joints*1000, right_joints*1000, left_mid_joint
 
     return left_joints*1000, right_joints*1000
 
