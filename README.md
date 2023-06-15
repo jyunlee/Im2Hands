@@ -5,8 +5,6 @@
 
 **[\[Project Page\]](https://jyunlee.github.io/projects/implicit-two-hands) [\[Paper\]](https://arxiv.org/abs/2302.14348) [\[Supplementary Video\]](https://youtu.be/3yNGSRz564A)**
 
-**Rest of the codes will be uploaded before CVPR 2023 (mid-June). Please stay tuned!**
-
 ---
 
 **CVPR 2023 Materials: [\[Presentation Video\]](https://youtu.be/hBSeN222Um4)** **<a href="https://jyunlee.github.io/projects/implicit-two-hands/data/cvpr2023_poster.pdf" class="image fit" type="application/pdf">\[Poster\]</a>**
@@ -22,8 +20,6 @@
 ## Environment Setup  
 
 Clone this repository and install the dependencies specified in `requirements.txt`.
-
-(NOTE: `requirements.txt` will be uploaded soon.)
 
 <pre><code> git clone https://github.com/jyunlee/Im2Hands.git
  mv Im2Hands
