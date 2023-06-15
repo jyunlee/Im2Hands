@@ -78,7 +78,7 @@ Run `ref_occ_generate.py` to generate the refined two-hand shapes.
 
 Place the pre-trained weights of [IntagHand](https://github.com/Dw1010/IntagHand) (`intaghand_baseline.pth`) under `out/kpts_ref` directory. These files can be also downloaded from [this Google Drive link](https://drive.google.com/drive/folders/1Kpoj1WW37hHvYgvhkwfmxNZVgPlyaApQ?usp=sharing).
 
-Also, place your initial hand keypoint files e.g. predicted using e.g. [IntagHand](https://github.com/Dw1010/IntagHand) under `pred_joints_before_ref` sub-directory and the ground truth keypoints of InterHand2.6M under `gt_joints` sub-directory of your pre-processed data directory.
+Also, place (1) your initial hand keypoint files (e.g. predicted using [IntagHand](https://github.com/Dw1010/IntagHand)) under `pred_joints_before_ref` sub-directory and (2) the ground truth keypoints of InterHand2.6M under `gt_joints` sub-directory of your pre-processed data directory.
 
 Then, Run `kpts_ref_train.py` to train your own Input Keypoint Refinement Network.
 
